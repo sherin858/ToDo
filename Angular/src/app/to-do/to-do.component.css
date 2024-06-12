@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: #f1f5f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin-top: 5rem;
+  background-color: white;
+  width: 95vw;
+  max-width: 500px;
+  padding: 2rem;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+input {
+  border-color: transparent;
+  line-height: 1.5;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem 0px 0px 0.25rem;
+  background-color: #f1f5f8;
+  flex-grow: 1;
+}
+.submit-btn {
+  border-color: transparent;
+  line-height: 1.5;
+  padding: 0.25rem 1rem;
+  border-radius: 0px 0.25rem 0.25rem 0px;
+  background-color: #a5d5f8;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.submit-btn:hover {
+  background-color: #49a6e9;
+}
+h2 {
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+}
+.items-container {
+  margin-top: 1rem;
+}
+.edit,
+.delete {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.edit {
+  background-color: #6be675;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.delete {
+  background-color: #e66b6b;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.buttons-container {
+  display: flex;
+  gap: 0.25rem;
+}
+.editAlert {
+  background-color: var(--editAlert);
+}
+.deleteAlert {
+  background-color: var(--removeAlert);
+}
+.Alert {
+  border-color: #e66b6b;
+}

@@ -1,0 +1,20 @@
+<div class="App">
+  <div class="container">
+    <h2>To Do List</h2>
+    <form>
+      <input type="text" #task />
+      <button type="button" class="submit-btn" (click)="addTodo(task.value)">
+        Submit
+      </button>
+    </form>
+    <div class="items-container">
+      <div class="item" *ngFor="let todo of todos">
+        <span>{{ todo.title }}</span>
+        <span class="buttons-container">
+          <button class="edit">Edit</button>
+          <button class="delete" (click)="deleteTodo(todo.id)">Delete</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
